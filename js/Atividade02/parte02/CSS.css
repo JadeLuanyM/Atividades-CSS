@@ -1,0 +1,40 @@
+body {		
+    background-color: lightsteelblue;
+    font-family: Sans-Serif;
+    text-align: center;	
+    color: Navy;
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3rem;	
+    color: white;
+    background-color: Navy;
+}
+input {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;  
+}   	
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+}
+img {
+    width: 100%;
+}
+#img_destaque {
+    filter: opacity(50%);
+}
+.item_peq {
+    width: 10%;
+}
+.item_dest {
+    width: 40%;
+}
+#img_destaque:hover {
+    filter: none;
+}

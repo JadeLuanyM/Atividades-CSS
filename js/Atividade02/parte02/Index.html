@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="CSS.css"/>
+        <link rel="icon" href="Imagens/wizard.png"/>
+        <script>
+            function MudaImagem(par_src, par_alt) {
+                img_destaque.src = par_src;
+                texto_destaque.innerHTML = par_alt;
+            }
+        
+        
+        </script>
+    </head>
+    <body>
+        <h1>Clique em uma Imagem:</h1>
+         <div class="container">
+            <div class="item_peq">
+             <img src="Imagens/1.png" alt="Bola de Futebol Americano" onclick="MudaImagem(this.src, this.alt )"/>
+             </div>
+             <div class="item_peq">
+                <img src="Imagens/2.png" alt="Bola de Beisebol" onclick="MudaImagem(this.src, this.alt )"/></div>
+            <div class="item_peq">
+                <img src="Imagens/3.png" alt="Bola de Basquete" onclick="MudaImagem(this.src, this.alt )"/></div> 
+             <div class="item_dest">
+                 <img id="img_destaque" src="Imagens/wizard.png" alt="Imagem Selecionada"/>
+                 
+                 
+             </div>
+            <div class="item_peq">
+                <img src="Imagens/4.png" alt="Bola de Futebol" onclick="MudaImagem(this.src, this.alt )"/></div>
+                 <div class="item_peq">
+                <img src="Imagens/5.png" alt="Bola de Tennis" onclick="MudaImagem(this.src, this.alt )"/></div>
+                 <div class="item_peq">
+                <img src="Imagens/6.png" alt="Bola de Vôlei" onclick="MudaImagem(this.src, this.alt )"/></div>
+            </div>
+        <br />
+        <p id="texto_destaque"></p>
+        <input type="reset" onclick="location.reload()" value="Limpar"/>        
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+        <link rel="stylesheet" type="text/css" href="CSS.css"/>
+        <link rel="icon" href="Imagens/wizard.png"/>
+        <script>
+            num_selecao = 0;
+            function ImagemAnterior() {
+                num_selecao--;
+                if (num_selecao < 1){
+                    num_selecao = 6;
+            }
+                img_destaque.src = "Imagens/" + num_selecao + ".png";
+                texto_destaque.innerHTML = par_alt;
+            }
+            function ImagemProxima () {
+                num_selecao++;
+                if (num_selecao > 6){
+                    num_selecao = 1;
+                }
+            img_destaque.src = "Imagens/" + num_selecao + ".png";
+                texto_destaque.innerHTML = par_alt;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Navegue entre as Imagens:</h1>
+         <div class="container">
+            <div class="item_peq">
+             <img src="Imagens/ant.png" alt="Anterior" onclick="ImagemAnterior()"/>
+             </div>
+             <div class="item_dest">
+                 <img id="img_destaque" src="Imagens/wizard.png" alt="Imagem Selecionada"/>
+             </div>
+            <div class="item_peq">
+                <img src="Imagens/prox.png" alt="Próximo" onclick="ImagemProxima()"/></div>
+            </div>
+        <br />
+        <input type="reset" onclick="location.reload()" value="Limpar"/>        
+        
+    </body>
+</html>

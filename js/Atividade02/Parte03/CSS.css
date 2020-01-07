@@ -1,0 +1,36 @@
+body {		
+    background-color: navajowhite;
+    font-family: Sans-Serif;
+    text-align: center;	
+    color: darkorange;
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3rem;	
+    color: black;
+    background: radial-gradient(white 10%, orange 50%);
+    text-shadow: 3px 3px White;
+}
+input {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;  
+}   	
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+}
+img {
+    width: 100%;
+}
+
+.item_peq {
+    width: 10%;
+}
+.item_dest {
+    width: 40%;
+}
