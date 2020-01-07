@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Comentários -->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="CSS.css"/>
+        
+        <title>Menu</title>
+        <script>
+            function AbrirMenu() {
+                if ( painel_menu.style.left == "0px") {
+                   painel_menu.style.left = "-250px";
+                    opc1.style.display = "none";
+                    opc2.style.display = "none";
+                }
+                else {
+                    painel_menu.style.left = "0px";
+                }
+            }
+            function ExibirOpc1() {
+                opc1.style.display = "block";
+                opc2.style.display = "none";
+            }
+             function ExibirOpc2() {
+                opc1.style.display = "none";
+                opc2.style.display = "block";
+            }
+            function LigarImagem(){
+                if (img_lig.src.endsWith("Imagens/off.png")){
+                    img_lig.src = "Imagens/on.png";
+                    bt_lig.value = "Desligar";
+                }
+                else {
+                    img_lig.src = "Imagens/off.png";
+                    bt_lig.value = "Ligar";
+                }
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        <div id="menu" onclick="AbrirMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+       <div id="painel_menu">
+        <input type="button" value="Opção 1" onclick="ExibirOpc1()"/>
+        <input type="button" value="Opção 2" onclick="ExibirOpc2()"/> 
+        </div> 
+        <div class="painel_principal" id="opc1">
+        <p>Liga e Desliga</p>
+            <input type="button" id="bt_lig" value="Aperte" onclick="LigarImagem()"/>
+            <br /><br />
+            <img id="img_lig" src="Imagens/off.png" alt="Liga e Desliga"/>                
+        </div> 
+         <div class="painel_principal" id="opc2">
+             <p>Passe o mouse em cima da Imagem</p>
+                <div id="img_trocar"></div>
+        </div> 
+        
+        
+    </body>
+</html>
