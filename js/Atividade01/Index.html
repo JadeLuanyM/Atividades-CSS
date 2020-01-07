@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript</title>
+         <link rel="stylesheet" type="text/css" href="CSS.css"/>
+        <link rel="icon" href="Imagens/js.png"/>
+        <script>
+            function MudaEstiloBorda(obj_foto, borda) {
+                obj_foto.style.borderStyle = borda;
+            }
+            function MudaCorBorda(obj_foto, borda) {
+                obj_foto.style.borderColor = borda;
+            }
+            function MudaTamanhoBorda(obj_foto, borda) {
+                obj_foto.style.borderWidth = borda;
+            }
+        
+        </script>
+    </head>
+    <body>
+        <form>
+        <h1>Bordas:</h1>
+            <div class="container">
+                <div class="item">
+                <img id="foto1" class="foto" src="Imagens/clima01.png" alt="Sol" />
+                </div>
+                <div class="item">
+                <img id="foto2" class="foto" src="Imagens/clima02.png" alt="Nublado" />
+                </div>
+                <div class="item">
+                <img id="foto3" class="foto" src="Imagens/clima03.png" alt="Chuva" />
+                </div>
+            
+            </div>
+            <br />
+            <div class="container">
+             <div class="item">
+                <select onchange="MudaEstiloBorda(foto1, this.value)">
+                 <option value="null" selected disabled>Selecione um Estilo</option>
+                    <option value="ridge">3D</option>
+                    <option value="double">Dupla</option>
+                    <option value="dotted">Pontilhada</option>
+                    <option value="dashed">Tracejada</option>                 
+                 </select>
+                </div>
+                <div class="item">
+                <select onchange="MudaCorBorda(foto2, this.value)">
+                 <option value="null" selected disabled>Selecione uma Cor</option>
+                    <option value="red">Vermelho</option>
+                    <option value="blue">Azul</option>
+                    <option value="green">Verde</option>
+               </select>
+              </div>
+                <div class="item">
+                <select onchange="MudaTamanhoBorda(foto3, this.value)">
+                 <option value="null" selected disabled>Selecione um Tamanho</option>
+                    <option value="2px">2px</option>
+                    <option value="4px">4px</option>
+                    <option value="8px">8px</option>
+                    </select>
+                </div> 
+            </div>
+            <br />
+        <input type="reset" value="Limpar" onclick="location.reload()"/>
+        </form>    
+    </body>
+</html>

@@ -1,0 +1,31 @@
+body {		
+    background-color: wheat;
+    font-family: Sans-Serif;
+    text-align: center;	
+    color: sienna;
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3rem;	
+    color: wheat;
+    background-color: sienna;
+}
+select, input {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;  
+}   	
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+}
+.item { 
+    width: 100%;
+}
+.foto {
+    border: 4px solid sienna;
+}
